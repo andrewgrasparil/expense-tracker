@@ -1,0 +1,46 @@
+/* ================================================================
+   assets/css/style.css
+   Small custom styles on top of Bootstrap 5.
+   ================================================================ */
+
+/* Soft grey page background so white cards stand out */
+body {
+    background-color: #f4f6f9;
+}
+
+/* Summary cards on the dashboard: colored left border */
+.stat-card {
+    border: 0;
+    border-left: 5px solid #0d6efd;      /* default: Bootstrap blue */
+    border-radius: 0.5rem;
+}
+.stat-card.stat-green  { border-left-color: #198754; }
+.stat-card.stat-orange { border-left-color: #fd7e14; }
+
+.stat-card .stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c757d;
+}
+.stat-card .stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* Rounded cards with a soft shadow */
+.card {
+    border-radius: 0.6rem;
+}
+
+/* Keep money columns tidy */
+.amount-col {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Login and register cards stay a nice size on big screens */
+.auth-card {
+    max-width: 440px;
+    margin: 2rem auto;
+}
